@@ -47,15 +47,25 @@ By default the plugin creates the following data:
 
 You can customize the output in your configuration:
 ```xml
+<properties>
+	<nameLength>16</nameLength>
+	<password>qwerty@01</password>
+	<propertiesDirectory>src/test/resources/</propertiesDirectory>
+	<propertiesFileName>foobar</propertiesFileName>
+</properties>
+```
+
+```xml
 <plugin>
 	<groupId>credentials.plugin</groupId>
 	<artifactId>credentials-maven-plugin</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<configuration>
-		<nameLength>16</nameLength>
-		<password>qwerty@01</password>
-		<propertiesDirectory>src/test/resources</propertiesDirectory>
-		<propertiesFileName>foobar</propertiesFileName>
+		<nameLength>${nameLength}</nameLength>
+		<password>${password}</password>
+		<propertiesDirectory>${propertiesDirectory}</propertiesDirectory>
+		<propertiesFileName>${propertiesFileName}</propertiesFileName>
 	</configuration>
 </plugin>
 ```
+You can then override properties in the command line as well `mvn credentials:credentials -DnameLength="12"`.
