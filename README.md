@@ -1,4 +1,5 @@
 #Plugin Repository
+Hope to put some more stuff here as time advances.
 
 ##Credentials Plugin##
 A simple plugin that creates a `.properties` file with a random username and a less than random password. For instance:
@@ -53,7 +54,7 @@ You can customize the output in your configuration:
 	<configuration>
 		<nameLength>16</nameLength>
 		<password>qwerty@01</password>
-		<propertiesDirectory>src/test/resources/</propertiesDirectory>
+		<propertiesDirectory>src/test/resources</propertiesDirectory>
 		<propertiesFileName>foobar</propertiesFileName>
 	</configuration>
 </plugin>
