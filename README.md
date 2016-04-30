@@ -50,7 +50,7 @@ You can customize the output in your configuration:
 <properties>
 	<nameLength>16</nameLength>
 	<password>qwerty@01</password>
-	<propertiesDirectory>src/test/resources/</propertiesDirectory>
+	<propertiesDirectory>src/test/resources</propertiesDirectory>
 	<propertiesFileName>foobar</propertiesFileName>
 </properties>
 ```
@@ -68,4 +68,4 @@ You can customize the output in your configuration:
 	</configuration>
 </plugin>
 ```
-You can then override properties in the command line as well `mvn credentials:credentials -DnameLength="12"`.
+You can then override properties in the command line as well `mvn credentials:credentials -DnameLength="12"`
