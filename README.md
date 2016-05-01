@@ -7,8 +7,14 @@ A simple plugin that creates a `.properties` file with a random username and a l
 password=Welkom01@
 username=ynvllf
 ```
+By default the plugin creates the following data:
 
-###POM configuration###
+* random username --> 6 characters long 
+* password --> Welkom01@
+* propertiesDirectory --> project root folder
+* propertiesFileName -->  credentials
+
+###POM Configuration###
 Add the following to the `pom.xml` of your project.
 
 ```xml
@@ -39,12 +45,6 @@ Add the following to the `pom.xml` of your project.
 `mvn credentials:credentials`
 
 ###Customize It###
-By default the plugin creates the following data:
-* random username --> 6 characters long 
-* password --> Welkom01@
-* propertiesDirectory --> project root folder
-* propertiesFileName -->  credentials
-
 You can customize the output in your configuration:
 ```xml
 <properties>
