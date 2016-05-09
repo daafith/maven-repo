@@ -42,7 +42,7 @@ Add the following to the `pom.xml` of your project.
 ```
 
 ###Run It###
-`mvn credentials:credentials`
+`mvn credentials:generate`
 
 ###Customize It###
 You can customize the output in your configuration:
@@ -68,4 +68,4 @@ You can customize the output in your configuration:
 	</configuration>
 </plugin>
 ```
-You can then override properties in the command line as well `mvn credentials:credentials -DnameLength="12"`
+You can then override properties in the command line as well `mvn credentials:generate -DnameLength="12"`
