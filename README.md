@@ -1,7 +1,8 @@
 #Plugin Repository
+
 Hope to put some more stuff here as time advances.
 
-##Credentials Plugin
+##Credentials Plugin##
 
 A simple plugin that creates a `.properties` file with a random username and a less than random password. For instance:
 ```
