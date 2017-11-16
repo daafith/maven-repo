@@ -1,9 +1,7 @@
-#Plugin Repository
-
+# Plugin Repository
 Hope to put some more stuff here as time advances.
 
-##Credentials Plugin##
-
+## Credentials Plugin
 A simple plugin that creates a `.properties` file with a random username and a less than random password. For instance:
 ```
 password=Welkom01@
@@ -16,7 +14,7 @@ By default the plugin creates the following data:
 * propertiesDirectory --> project root folder
 * propertiesFileName -->  credentials
 
-###POM Configuration###
+### POM Configuration
 Add the following to the `pom.xml` of your project.
 
 ```xml
@@ -43,10 +41,10 @@ Add the following to the `pom.xml` of your project.
 </build>
 ```
 
-###Run It###
+### Run It
 `mvn credentials:generate`
 
-###Customize It###
+### Customize It
 You can customize the output in your configuration:
 ```xml
 <properties>
